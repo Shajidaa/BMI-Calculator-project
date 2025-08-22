@@ -9,15 +9,15 @@
      <link rel="stylesheet" href="./style.css">
   </head>
   </head>
-  <body class="  bg-violet-300 ">
-    <section  class="  flex flex-col justify-center items-center ">
+  <body class="  bg-violet-300  ">
+    <section  id="input-section"  class="  flex flex-col justify-center items-center h-[100vh]  ">
       <h1 class="text-4xl  md:text-6xl font-bold underline p-4 text-violet-900 ">BMI Calculator</h1>
       <br>
-     <div id="input-section" class=" grid place-items-center  font-bold font-sans  p-5  bg-amber-50 rounded-xl ">
+     <div class=" grid place-items-center  font-bold font-sans  p-5  bg-amber-50 rounded-xl ">
          <div  id="container" class="relative">
-        <input onclick="showHiddenSection()" class="border-2  
+        <input  class="border-2  
          rounded-xl border-violet-500 p-2 md:p-3
-          text-center  " type="text" placeholder="Height" id="input-height" />
+          text-center  " type="text" placeholder="Write height into feet" id="input-height" />
           
       
           <!-- <div id="hidden-text-height" class="absolute right-2 bg-violet-300 w-[75%] text-center " >Write your height <br>into Metre</div> -->
@@ -25,7 +25,7 @@
         <br>
         <br>
         <input class="border-2 rounded-xl  p-2 md:p-3 border-violet-500 text-center"
-         type="text" placeholder="Weight" id="input-weight" />
+         type="text" placeholder=" Write weight into kg" id="input-weight" />
         <br>
         <br>
         <button  id="submit-btn" class="border-2  block  mx-auto bg-violet-600 rounded-xl
@@ -44,8 +44,10 @@
 
     <!-- //result -->
      <section id="output-section">
- <section class="  flex flex-col justify-center items-center mx-auto " id="result-sheet">
       
+ <section class="   flex flex-col justify-center items-center mx-auto h-[100vh] " id="result-sheet">
+      <h1 class="text-4xl  md:text-6xl font-bold underline p-4 text-violet-900 ">BMI Calculator</h1>
+      <br>
       <br>
      <div class=" grid place-items-center  font-bold font-sans  p-5  bg-amber-50 rounded-xl ">
          <div  id="container" class="relative">
@@ -59,8 +61,12 @@
       </div>
       <br>
       <p id="note"></p>
-    </div>
      
+    </div>
+      <br>
+          <button id="reset" class="border-2  block  mx-auto bg-violet-600 rounded-xl
+             border-violet-500 p-2 md:p-3 text-center">More try</button>
+
     </section>
      </section>
     
