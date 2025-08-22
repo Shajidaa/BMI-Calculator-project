@@ -6,35 +6,65 @@
     <title>BMI Calculator</title>
     <!-- tailwind css -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="./style.css">
   </head>
   </head>
   <body class="  bg-violet-300 ">
-    <section class="  flex flex-col justify-center items-center h-[100vh]">
+    <section  class="  flex flex-col justify-center items-center ">
       <h1 class="text-4xl  md:text-6xl font-bold underline p-4 text-violet-900 ">BMI Calculator</h1>
       <br>
-     <div class=" grid place-items-center  font-bold font-sans  p-5  bg-amber-50 rounded-xl ">
-         <div  id="container">
-        <input class="border-2 w-[90%] 
+     <div id="input-section" class=" grid place-items-center  font-bold font-sans  p-5  bg-amber-50 rounded-xl ">
+         <div  id="container" class="relative">
+        <input onclick="showHiddenSection()" class="border-2  
          rounded-xl border-violet-500 p-2 md:p-3
-          text-center" type="text" placeholder="Height" id="input-height" />
-          <!-- <button id="hidden-text-height" disabled >Write your height into Metre</button> -->
+          text-center  " type="text" placeholder="Height" id="input-height" />
+          
+      
+          <!-- <div id="hidden-text-height" class="absolute right-2 bg-violet-300 w-[75%] text-center " >Write your height <br>into Metre</div> -->
+          
         <br>
         <br>
-        <input class="border-2 w-[90%] rounded-xl  p-2 md:p-3 border-violet-500 text-center"
+        <input class="border-2 rounded-xl  p-2 md:p-3 border-violet-500 text-center"
          type="text" placeholder="Weight" id="input-weight" />
         <br>
         <br>
         <button  id="submit-btn" class="border-2  block  mx-auto bg-violet-600 rounded-xl
              border-violet-500 p-2 md:p-3 text-center">Submit</button>
         <br>
+        <!-- <label for="result"> Your BMI is :
+            <br>
+            <br>
+            <input class="border-2 w-[90%]  rounded-xl
+             border-violet-500 p-2 md:p-3 text-center" type="text" name="" id="result" placeholder="">
+        </label> -->
+      </div>
+    </div>
+     
+    </section>
+
+    <!-- //result -->
+     <section id="output-section">
+ <section class="  flex flex-col justify-center items-center mx-auto " id="result-sheet">
+      
+      <br>
+     <div class=" grid place-items-center  font-bold font-sans  p-5  bg-amber-50 rounded-xl ">
+         <div  id="container" class="relative">
+        
         <label for="result"> Your BMI is :
             <br>
             <br>
             <input class="border-2 w-[90%]  rounded-xl
              border-violet-500 p-2 md:p-3 text-center" type="text" name="" id="result" placeholder="">
         </label>
-      </div></div>
-      <script src="./script.js"></script>
+      </div>
+      <br>
+      <p id="note"></p>
+    </div>
+     
     </section>
+     </section>
+    
+
+     <script src="./script.js"></script>
   </body>
 </html>
