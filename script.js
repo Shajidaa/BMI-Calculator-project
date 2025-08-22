@@ -21,7 +21,7 @@ btn.addEventListener('click',function () {
     // if ( typeof height=== "string" ||typeof height=== "null"|| 
     //     typeof weight=== "string"||typeof weight=== "null" ) {
          
-
+          
     // }
     
     
