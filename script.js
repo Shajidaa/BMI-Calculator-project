@@ -28,6 +28,7 @@ btn.addEventListener('click',function () {
     const calculationValue=Number(weight)/(Number(height*.3048)*Number(height*0.3048));
     
     finalBMI.value=calculationValue.toFixed(2);
+   
 
     //BMi chart 
 
@@ -44,7 +45,8 @@ btn.addEventListener('click',function () {
    }
   
    
-   //togol
+   //toggle
+   
    inputSection.style.display='none'
    outputSection.style.display='flex'
    
@@ -55,6 +57,7 @@ btn.addEventListener('click',function () {
 const resetBtn=document.querySelector('#reset');
 
 resetBtn.addEventListener('click',function () {
+
     window.location.reload(true); 
     inputSection.style.display='flex';
 
